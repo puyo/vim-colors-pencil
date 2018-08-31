@@ -1,6 +1,6 @@
-# vim-colors-pencil
+# vim-colors-pencil-warm
 
-> A light (and dark) color scheme for Vim inspired by iA Writer
+> A light (and dark) color scheme for Vim inspired by iA Writer, updated to be similar to Spacemacs' light theme.
 
 ![markdown-example](http://i.imgur.com/BYLMdx5.jpg)
 
