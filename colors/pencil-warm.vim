@@ -35,7 +35,7 @@ if exists('syntax on')
     syntax reset
 endif
 
-let g:colors_name='pencil'
+let g:colors_name='pencil-warm'
 
 if ! exists("g:pencil_higher_contrast_ui")
   let g:pencil_higher_contrast_ui = 0

@@ -148,7 +148,7 @@ For more details on Vim’s Conceal feature, see:
 Just like any other color scheme:
 
 ```vim
-:colorscheme pencil
+:colorscheme pencil-warm
 ```
 
 You can toggle between the light and dark variants:
