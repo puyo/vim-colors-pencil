@@ -1,7 +1,7 @@
 " Vim Color File
-" Name:       pencil.vim
-" Version:    0.6
-" Maintainer: github.com/reedes github.com/mattly
+" Name:       pencil-warm.vim
+" Version:    1.0
+" Maintainer: github.com/puyo
 " License:    The MIT License (MIT)
 
 " Original iA Writer colors, to use as a guide
@@ -65,7 +65,7 @@ endif
 " Colors
 let s:black           = { "gui": "#212121", "cterm": "0"   }
 let s:medium_gray     = { "gui": "#767676", "cterm": "243" }
-let s:white           = { "gui": "#F1F1F1", "cterm": "15"  }
+let s:white           = { "gui": "#FFFAF0", "cterm": "15"  }
 let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231" }
 let s:light_black     = { "gui": "#424242", "cterm": "8"   }
 let s:lighter_black   = { "gui": "#545454", "cterm": "240" }
@@ -169,34 +169,40 @@ endfunction
 " (see `:h w18`)
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
+hi! link Delimiter        Normal
+hi! link Operator         Normal
+
 call s:h("Cursor",        {"bg": s:blue, "fg": s:norm })
 call s:h("Comment",       {"fg": s:medium_gray, "gui": "italic", "cterm": "italic"})
 
-call s:h("Constant",      {"fg": s:cyan})
-hi! link String           Constant
-hi! link Character        Constant
+call s:h("String",        {"fg": s:dark_green})
+hi! link String           String
+hi! link Character        String
+
+call s:h("Constant",      {"fg": s:pink})
 hi! link Number           Constant
 hi! link Boolean          Constant
 hi! link Float            Constant
 
-call s:h("Identifier",    {"fg": s:dark_blue})
+call s:h("Symbol",        {"fg": s:dark_purple})
+
+call s:h("Identifier",    {"fg": s:dark_purple, "gui": "bold"})
 hi! link Function         Identifier
 
-call s:h("Statement",     {"fg": s:green})
+call s:h("Statement",     {"fg": s:dark_blue, "gui": "bold"})
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
 hi! link Label            Statement
-hi! link Operator         Statement
 hi! link Keyword          Statement
 hi! link Exception        Statement
 
-call s:h("PreProc",       {"fg": s:red})
+call s:h("PreProc",       {"fg": s:dark_blue, "gui": "bold"})
 hi! link Include          PreProc
 hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h("Type",          {"fg": s:purple})
+call s:h("Type",          {"fg": s:red, "gui": "bold"})
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
@@ -204,7 +210,6 @@ hi! link Typedef          Type
 call s:h("Special",       {"fg": s:pink})
 hi! link SpecialChar      Special
 hi! link Tag              Special
-hi! link Delimiter        Special
 hi! link SpecialComment   Special
 hi! link Debug            Special
 
