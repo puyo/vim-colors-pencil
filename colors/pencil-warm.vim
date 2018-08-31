@@ -86,6 +86,7 @@ let s:pink            = { "gui": "#fb007a", "cterm": "9"   }
 let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
 let s:light_red       = { "gui": "#E32791", "cterm": "1"   }
 let s:orange          = { "gui": "#D75F5F", "cterm": "167" }
+let s:light_orange    = { "gui": "#EEAD0E", "cterm": "167" }
 
 let s:darker_blue     = { "gui": "#005F87", "cterm": "18"  }
 let s:dark_blue       = { "gui": "#008EC4", "cterm": "4"   }
@@ -172,7 +173,7 @@ call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 hi! link Delimiter        Normal
 hi! link Operator         Normal
 
-call s:h("Cursor",        {"bg": s:blue, "fg": s:norm })
+call s:h("Cursor",        {"bg": s:light_orange, "fg": s:norm })
 call s:h("Comment",       {"fg": s:medium_gray, "gui": "italic", "cterm": "italic"})
 
 call s:h("String",        {"fg": s:dark_green})
